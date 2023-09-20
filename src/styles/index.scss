@@ -1,0 +1,148 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  height: 7px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  height: 7px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+
+}
+.toolbar-title {
+  font-size: 22px;
+  color: black;
+  font-weight: bolder;
+}
+
+.navbar-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  & i {
+    cursor: pointer;
+    font-size: 23px;
+    color: white;
+  }
+
+}
+
+.table-bottom-border {
+  border-bottom: unset !important;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+.el-form-item__label {
+  padding: 0 !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+}
+
+.el-dialog__body {
+  height: calc(100vh - 150px) !important;
+  overflow-y: scroll !important;
+}
+
+.el-dialog__header {
+  background: #409eff !important;
+
+  & * {
+    color: white !important;
+  }
+
+}
+
+.toolbar {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.el-table .cell {
+  word-break: break-word;
+}
